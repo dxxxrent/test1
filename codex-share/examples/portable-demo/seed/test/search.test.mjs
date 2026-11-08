@@ -1,0 +1,10 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { searchTitles } from '../src/search.mjs';
+const items = [{ title: 'Alpha Guide' }, { title: 'Beta Manual' }];
+test('matches a normal substring', () => assert.deepEqual(searchTitles(items, 'Guide'), [items[0]]));
+test('matches without case sensitivity', () => assert.deepEqual(searchTitles(items, 'ALPHA'), [items[0]]));
+test('trims the query', () => assert.deepEqual(searchTitles(items, ' alpha '), [items[0]]));
+test('whitespace-only query returns all items', () => assert.deepEqual(searchTitles(items, '  '), items));
+test('non-string queries fail clearly', () => { for (const query of [null, 1, {}, undefined]) assert.throws(() => searchTitles(items, query), { name: 'TypeError', message: /query/i }); });
+test('preserves the input and object identity', () => { const original = structuredClone(items); const result = searchTitles(items, 'Guide'); assert.deepEqual(items, original); assert.equal(result[0], items[0]); assert.notEqual(result, items); });

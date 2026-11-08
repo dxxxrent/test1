@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gxyan.dao.NoticeMapper">
+  <resultMap id="NoticeResultMap" type="com.gxyan.pojo.Notice">
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="title" property="title" jdbcType="VARCHAR" />
+    <result column="content" property="content" jdbcType="LONGVARCHAR" />
+    <result column="status" property="status" jdbcType="TINYINT" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="NoticeColumns">id, title, content, status, create_time, update_time</sql>
+  <select id="selectList" parameterType="com.gxyan.vo.NoticeQuery" resultMap="NoticeResultMap">
+    select <include refid="NoticeColumns" /> from system_notice
+    <where>
+      <if test="title != null and title != ''">
+        title like concat('%', #{title}, '%')
+      </if>
+      <if test="status != null">
+        and status = #{status}
+      </if>
+    </where>
+    order by create_time desc, id desc
+  </select>
+  <insert id="insert" parameterType="com.gxyan.pojo.Notice">
+    insert into system_notice (title, content, status)
+    values (#{title}, #{content}, #{status})
+  </insert>
+  <update id="update" parameterType="com.gxyan.pojo.Notice">
+    update system_notice
+    set title = #{title}, content = #{content}, status = #{status}
+    where id = #{id}
+  </update>
+  <delete id="deleteById" parameterType="java.lang.Long">
+    delete from system_notice where id = #{id}
+  </delete>
+</mapper>

@@ -1,0 +1,313 @@
+{
+  "package": "codex-workflow-share",
+  "version": 3,
+  "prepared_date": "2026-10-22",
+  "execution_mode": "one-time-native-project-integration-then-interactive-codex",
+  "source_revision": "141ea10d343ca4894493f6bd052594e175f55cb8",
+  "payload_file_count": 42,
+  "validation_summary": {
+    "installer_tests_passed": 16,
+    "codex_portability_example": "completed",
+    "example_acceptance_tests_passed": 6
+  },
+  "validation_scope": "One isolated Node project; not FDE app regression or every target environment.",
+  "excluded_from_manifest": [
+    "manifest.json",
+    "codex-workflow-share-v3-20261022.zip",
+    "codex-workflow-share-v3-20261022.zip.sha256"
+  ],
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 31,
+      "sha256": "5be0dcdbf2c43e62d32f2ef8fbc7f39a8c935c7e58e1e5364e3bb312d4bcfb73",
+      "copy_mode": "prepared-for-sharing"
+    },
+    {
+      "path": "docs/01-workflow.md",
+      "bytes": 3568,
+      "sha256": "4ef4beb102063bc6b7489e7c8c5b8307861ccc0e3e9b7487ca57bb92d1b88b9b",
+      "copy_mode": "prepared-for-sharing"
+    },
+    {
+      "path": "docs/02-adoption.md",
+      "bytes": 1597,
+      "sha256": "df5047faf9d3baf961d758f21f070171b50467f42561907a38776cc669f3f436",
+      "copy_mode": "prepared-for-sharing"
+    },
+    {
+      "path": "docs/03-validation.md",
+      "bytes": 2960,
+      "sha256": "b7723d072e144d1356add02d300dd19c80953df42964948447d54d5e6160e551",
+      "copy_mode": "prepared-for-sharing"
+    },
+    {
+      "path": "docs/04-document-runtime.md",
+      "bytes": 1788,
+      "sha256": "9f52ab0307896deda2f8a76638198bf4c8fc25502792106f03e9e6ffd7fef3a3",
+      "copy_mode": "prepared-for-sharing"
+    },
+    {
+      "path": "docs/05-limitations.md",
+      "bytes": 1597,
+      "sha256": "9c69bf5f63effa2fe06fefea75ff36d4cd4a25fc33c50a2eae9faf0b604cbe5f",
+      "copy_mode": "prepared-for-sharing"
+    },
+    {
+      "path": "docs/06-codex-discovery.md",
+      "bytes": 1368,
+      "sha256": "a9e563ca96e7e823b3e97e12d519a834dee0954a11c801aba2f7a3d1cf0a6cd5",
+      "copy_mode": "prepared-for-sharing"
+    },
+    {
+      "path": "evidence/codex-written-validation.md",
+      "bytes": 1145,
+      "sha256": "1c9e9884c1dae3dd83938d6322140f7c5de4519de8b843382d97ab47fcdf6095",
+      "copy_mode": "prepared-for-sharing"
+    },
+    {
+      "path": "evidence/demo-after-tests.txt",
+      "bytes": 388,
+      "sha256": "6bc0d57f8a329ca10c45dae6adb0f4b6bce66bffec396404263de1e4d237a138",
+      "copy_mode": "prepared-for-sharing"
+    },
+    {
+      "path": "evidence/demo-before-tests.txt",
+      "bytes": 3866,
+      "sha256": "bfbe9fb980012b5472a3d6f2af1d88bb35e9775ab47e38e0c3b5b24485784e47",
+      "copy_mode": "prepared-for-sharing"
+    },
+    {
+      "path": "evidence/portability-20261022.md",
+      "bytes": 2012,
+      "sha256": "18d5f01b6bb8462a9daa3dd670a189eeeb4cb9f0f11060ec9eee7f13c5c9e1f8",
+      "copy_mode": "prepared-for-sharing"
+    },
+    {
+      "path": "evidence/portability-result.json",
+      "bytes": 1437,
+      "sha256": "aa2d62b4fac7656c43593ba53387c66d684c804994b87078c0af5432743a0a2e",
+      "copy_mode": "prepared-for-sharing"
+    },
+    {
+      "path": "examples/fde/project-context/bridge-package.json",
+      "bytes": 1360,
+      "sha256": "896950b0544efe11588cd76f53cebb2bc884b74054e04108139f8338f535eea8",
+      "copy_mode": "verbatim",
+      "source": {
+        "kind": "repository",
+        "path": "demo/codebuddy-bridge/package.json",
+        "sha256": "896950b0544efe11588cd76f53cebb2bc884b74054e04108139f8338f535eea8"
+      }
+    },
+    {
+      "path": "examples/fde/project-context/CODEBUDDY.md",
+      "bytes": 1530,
+      "sha256": "bbb417da72a5b34a37dcd88f394d7b41a7ac99dc2af4bb273b75d558ba726939",
+      "copy_mode": "verbatim",
+      "source": {
+        "kind": "repository",
+        "path": "CODEBUDDY.md",
+        "sha256": "bbb417da72a5b34a37dcd88f394d7b41a7ac99dc2af4bb273b75d558ba726939"
+      }
+    },
+    {
+      "path": "examples/fde/project-context/CONTEXT.md",
+      "bytes": 27903,
+      "sha256": "e1cd1158a344073947f1dd039a9cf82069590c99201ec3951f708c00cb6aa543",
+      "copy_mode": "verbatim",
+      "source": {
+        "kind": "repository",
+        "path": "CONTEXT.md",
+        "sha256": "e1cd1158a344073947f1dd039a9cf82069590c99201ec3951f708c00cb6aa543"
+      }
+    },
+    {
+      "path": "examples/fde/project-context/DESIGN.md",
+      "bytes": 17092,
+      "sha256": "848dc82a8e6c415e35b552ce79801d67c85c2e5f15d26c173b2723103653d09d",
+      "copy_mode": "verbatim",
+      "source": {
+        "kind": "repository",
+        "path": "DESIGN.md",
+        "sha256": "848dc82a8e6c415e35b552ce79801d67c85c2e5f15d26c173b2723103653d09d"
+      }
+    },
+    {
+      "path": "examples/fde/README.md",
+      "bytes": 805,
+      "sha256": "ad772d45c6ce25c2024a268b6a929fb1211f7cdb930c7ec4465bea2aaa0a6f67",
+      "copy_mode": "prepared-for-sharing"
+    },
+    {
+      "path": "examples/fde/records/newbuild-toc-20261021.md",
+      "bytes": 2545,
+      "sha256": "144dcd1d81eaf339acc5ac62283effe1d628327e87df219ca02d2ad8215686b1",
+      "copy_mode": "verbatim",
+      "source": {
+        "kind": "repository",
+        "path": "docs/testing/newbuild-toc-20261021.md",
+        "sha256": "144dcd1d81eaf339acc5ac62283effe1d628327e87df219ca02d2ad8215686b1"
+      }
+    },
+    {
+      "path": "examples/fde/records/private-document-delete-20261022.md",
+      "bytes": 3102,
+      "sha256": "0421a405953673dcb405d1e5fe1614b0c59279fddb91ea14f2007afc70bdd2cf",
+      "copy_mode": "verbatim",
+      "source": {
+        "kind": "repository",
+        "path": "docs/testing/private-document-delete-20261022.md",
+        "sha256": "0421a405953673dcb405d1e5fe1614b0c59279fddb91ea14f2007afc70bdd2cf"
+      }
+    },
+    {
+      "path": "examples/portable-demo/README.md",
+      "bytes": 1462,
+      "sha256": "846c7f6d90e43fa766e139d09fa67c5d78e884db9f138822b92293521e856927",
+      "copy_mode": "prepared-for-sharing"
+    },
+    {
+      "path": "examples/portable-demo/seed/AGENTS.md",
+      "bytes": 162,
+      "sha256": "19d7a4ef8c306ae75673f242e5e77e50284cc3bce28864139dc83be68689a3c7",
+      "copy_mode": "prepared-for-sharing"
+    },
+    {
+      "path": "examples/portable-demo/seed/package.json",
+      "bytes": 160,
+      "sha256": "75276b20bd9159a2296815fbc2a7e616cd2b332e75c612f3c28a6ec461a9accd",
+      "copy_mode": "prepared-for-sharing"
+    },
+    {
+      "path": "examples/portable-demo/seed/README.md",
+      "bytes": 136,
+      "sha256": "3e165177757db119ba03280f67e5ce669b872a372971cb8d869c7a953f64d789",
+      "copy_mode": "prepared-for-sharing"
+    },
+    {
+      "path": "examples/portable-demo/seed/src/search.mjs",
+      "bytes": 106,
+      "sha256": "3d10134b46d4a558b61a7608f6c1f74bb3cc345207efa2f7135d57b9e712113e",
+      "copy_mode": "prepared-for-sharing"
+    },
+    {
+      "path": "examples/portable-demo/seed/test/search.test.mjs",
+      "bytes": 1036,
+      "sha256": "da86906628f412ad56e12d7d359c842900323a7b98df9de3e57e1a2d67947c5a",
+      "copy_mode": "prepared-for-sharing"
+    },
+    {
+      "path": "install.py",
+      "bytes": 7428,
+      "sha256": "5fa29aa67c4996ebc0a2bd99ba2f4b0854f6dbcefe153a01d3a7729dbe59dbb2",
+      "copy_mode": "prepared-for-sharing"
+    },
+    {
+      "path": "integration/AGENTS.block.md",
+      "bytes": 1017,
+      "sha256": "235b528dd12f6fab0cd9fad5d5bc73a20201d87f381b6bcbfe428ed57a4e5ac5",
+      "copy_mode": "prepared-for-sharing"
+    },
+    {
+      "path": "PACKAGE-CHECKS.md",
+      "bytes": 2277,
+      "sha256": "4f193d9b23696f077a8b63bf37874281ea7d5be0477424fb07a34a4552041297",
+      "copy_mode": "prepared-for-sharing"
+    },
+    {
+      "path": "prompts/full-task.md",
+      "bytes": 1854,
+      "sha256": "7b2e91257eef535f53e9dd33e0c5f8af21cfe5ae4acd45f807bf72eda3db48fa",
+      "copy_mode": "prepared-for-sharing"
+    },
+    {
+      "path": "prompts/record-and-handoff.md",
+      "bytes": 852,
+      "sha256": "61ebbb75c37fd1e7d70537e1300df405a9ee2fb02d120ce134667a66ddb73455",
+      "copy_mode": "prepared-for-sharing"
+    },
+    {
+      "path": "prompts/validation-only.md",
+      "bytes": 1011,
+      "sha256": "3faa0cd89525f61007794251ffbc7714cca9c14cf6c047996199c54960d8cb98",
+      "copy_mode": "prepared-for-sharing"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2575,
+      "sha256": "a0ad763ef1bfc8736d1b8a8a72bdba8018d3573089e5df244df33af4ee0dbd68",
+      "copy_mode": "prepared-for-sharing"
+    },
+    {
+      "path": "START-HERE.md",
+      "bytes": 2651,
+      "sha256": "8f155a3ee3d15244fde35613952b51801921cb6b87a82d06aa3c38035ccfc829",
+      "copy_mode": "prepared-for-sharing"
+    },
+    {
+      "path": "starter/.agents/skills/document-driven-code-workflow/SKILL.md",
+      "bytes": 5408,
+      "sha256": "53819aa851d5ed75e416b2994efa9939e57f3424bb810158f4960ad715e36a41",
+      "copy_mode": "verbatim",
+      "source": {
+        "kind": "installed-user-skill",
+        "path": "document-driven-code-workflow/SKILL.md",
+        "sha256": "53819aa851d5ed75e416b2994efa9939e57f3424bb810158f4960ad715e36a41"
+      }
+    },
+    {
+      "path": "starter/.agents/skills/git-ui-playwright/SKILL.md",
+      "bytes": 4367,
+      "sha256": "b94f5c4e1b326df9fbea1d6529c00a30a67858049f4783fd82de35feecb471a6",
+      "copy_mode": "verbatim",
+      "source": {
+        "kind": "installed-user-skill",
+        "path": "git-ui-playwright/SKILL.md",
+        "sha256": "b94f5c4e1b326df9fbea1d6529c00a30a67858049f4783fd82de35feecb471a6"
+      }
+    },
+    {
+      "path": "starter/README.md",
+      "bytes": 644,
+      "sha256": "f32077f6f6c30651fa41d59880b98dc63f22d28fd4837d8d8f11ecaeb45e07c6",
+      "copy_mode": "prepared-for-sharing"
+    },
+    {
+      "path": "templates/change-report.md",
+      "bytes": 369,
+      "sha256": "610be601cce1caa37b6f1ea6516d4e6a975e2b8b040e52ba4d0b8bfe3d900ec3",
+      "copy_mode": "prepared-for-sharing"
+    },
+    {
+      "path": "templates/handoff.md",
+      "bytes": 445,
+      "sha256": "b97f4159f80b40e3e8967661ddf1e2ac118e2a35d7cabc22d02415db890bbfe7",
+      "copy_mode": "prepared-for-sharing"
+    },
+    {
+      "path": "templates/requirement.md",
+      "bytes": 669,
+      "sha256": "2740a2a6f9439fba43153a2a849e44afa1dff6c944fd6878f818ca2f52c6bff3",
+      "copy_mode": "prepared-for-sharing"
+    },
+    {
+      "path": "templates/validation-report.md",
+      "bytes": 757,
+      "sha256": "c5e23e1a3873eddaf394a84d8e226a1faf6dda96ba80f80902f7da332dadafd1",
+      "copy_mode": "prepared-for-sharing"
+    },
+    {
+      "path": "tests/test_install.py",
+      "bytes": 8225,
+      "sha256": "eb85c3864d106e37034f35278952d590a2ba69f11a49cfb19e6a70e8b377baf9",
+      "copy_mode": "prepared-for-sharing"
+    },
+    {
+      "path": "WORKFLOW.md",
+      "bytes": 4328,
+      "sha256": "afbbfa2b7d96b6bedb0a0a3b72124b8ffad36d60f07e023d2c06f2718f2dbfa6",
+      "copy_mode": "prepared-for-sharing"
+    }
+  ]
+}

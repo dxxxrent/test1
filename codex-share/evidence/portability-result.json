@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-22",
+  "test_scope": "isolated-native-node-project",
+  "codex_cli_version": "0.162.1",
+  "codex_run_exit": 0,
+  "prompt_repeated_workflow": false,
+  "rule_automatically_followed": true,
+  "original_project_rules_preserved": true,
+  "original_acceptance_assertions_unchanged": true,
+  "comparison_note": "Git comparison normalizes Windows CRLF/LF line endings; acceptance source is otherwise identical.",
+  "installer_tests": {
+    "run": 16,
+    "passed": 16,
+    "failed": 0
+  },
+  "independent_behavior_checks": {
+    "command": "node --test --test-isolation=none",
+    "before": {
+      "passed": 2,
+      "failed": 4,
+      "exit": 1
+    },
+    "after": {
+      "passed": 6,
+      "failed": 0,
+      "exit": 0
+    }
+  },
+  "syntax_exit": 0,
+  "git_diff_check_exit": 0,
+  "environment_limit": "The sandbox blocked node:test child-process spawning through npm test; Codex reported it and ran direct assertions; independent review ran the unchanged six tests without process isolation.",
+  "workflow_guide_sha256": "afbbfa2b7d96b6bedb0a0a3b72124b8ffad36d60f07e023d2c06f2718f2dbfa6",
+  "source_before_sha256": "3d10134b46d4a558b61a7608f6c1f74bb3cc345207efa2f7135d57b9e712113e",
+  "source_after_sha256": "3533531d0702e0d44e430487646a470910586c978380dd00791b2350412a4b5f",
+  "normalized_acceptance_tests_sha256": "da86906628f412ad56e12d7d359c842900323a7b98df9de3e57e1a2d67947c5a"
+}

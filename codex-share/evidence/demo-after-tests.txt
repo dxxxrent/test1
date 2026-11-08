@@ -1,0 +1,14 @@
+✔ matches a normal substring (1.1704ms)
+✔ matches without case sensitivity (0.1518ms)
+✔ trims the query (0.09ms)
+✔ whitespace-only query returns all items (0.0921ms)
+✔ non-string queries fail clearly (0.5164ms)
+✔ preserves the input and object identity (0.3599ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 32.0563
